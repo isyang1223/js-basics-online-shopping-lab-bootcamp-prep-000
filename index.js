@@ -51,11 +51,17 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var t = 0;
+  for (var i = 0; i < cart.length; i++){
+    for (var item in cart[i]){
+      t+=cart[i][item];
+    }
+  }
+  return t;
 }
 
 function removeFromCart(item) {
-  // write your code here
+
 }
 
 function placeOrder(cardNumber) {
