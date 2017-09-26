@@ -80,5 +80,7 @@ function placeOrder(cardNumber) {
     console.log("Sorry, we don't have a credit card on file for you.");
     return false;
   }
+  console.log(`Your total cost is $${total()}, which will be charged to the car ${cardNumber}`);
+  cart=[];
   // write your code here
 }
